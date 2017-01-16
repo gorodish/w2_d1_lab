@@ -21,6 +21,14 @@ def set_player(new_name)
   @players.push(new_name)
 end
 
+def check_if_player(player)
+  for player in @players
+    if player == player
+    return player
+  end
+  return "Not in team"
+end
+end
   # def get_team_name
   #   return @team_name
   # end

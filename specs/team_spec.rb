@@ -36,7 +36,9 @@ class TestTeam < MiniTest::Test
     @harlem.set_player("Buzzy")
     assert_equal("Buzzy", @harlem.players.last)
     assert_equal(7, @harlem.players.length)
-
   end
 
+  def test_check_if_player
+    assert_equal("Clutch", @harlem.check_if_player("Clutch"))
+  end
 end
